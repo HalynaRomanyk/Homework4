@@ -42,11 +42,10 @@ public class Triangle extends PlaneShape {
 
     @Override
     public String toString() {
-        return "Triangle{" +
-                "vertices=" + Arrays.toString(vertices) + getArea() + getPerimeter() +
-                '}';
+        return "Triangle{" + ", Area=" + getArea() + ", Perimeter=" + getPerimeter() +
+                ", vertices=" + Arrays.toString(vertices) + '}';
     }
-
 }
+
 
 

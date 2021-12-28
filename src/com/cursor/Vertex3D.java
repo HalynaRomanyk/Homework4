@@ -1,9 +1,9 @@
 package com.cursor;
 
 public class Vertex3D {
-        public int x;
-        public int y;
-        public int z;
+    public int x;
+    public int y;
+    public int z;
 
     public Vertex3D(int x, int y, int z) {
         this.x = x;

@@ -11,12 +11,11 @@ public class Rectangle extends PlaneShape {
         this.width = width;
         this.vertices = new Vertex3D[1];
         vertices[0] = new Vertex3D(v1.x, v1.y, 0);
-
     }
 
     @Override
     public double getArea() {
-         return height*width;
+        return height * width;
     }
 
     @Override
@@ -27,8 +26,13 @@ public class Rectangle extends PlaneShape {
     @Override
     public String toString() {
         return "Rectangle{" +
-                "vertices=" + Arrays.toString(vertices) + getArea() + getPerimeter() +
+                "Area=" + getArea() + ", Perimeter=" + getPerimeter() +
+                ", vertices=" + Arrays.toString(vertices) +
+                ", width=" + width +
+                ", height=" + height +
                 '}';
     }
 }
+
+
 

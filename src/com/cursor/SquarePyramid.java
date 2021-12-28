@@ -1,5 +1,7 @@
 package com.cursor;
 
+import java.util.Arrays;
+
 public class SquarePyramid extends SpaceShape {
 
     int height, width;
@@ -13,19 +15,21 @@ public class SquarePyramid extends SpaceShape {
 
     @Override
     public double getArea() {
-        return width*2+height*8;
+        return Math.sqrt(Math.pow(width / 2, 2) + Math.pow(height, 2)) * width;
     }
 
     @Override
     public double getVolume() {
-        return 2*width/3*height;
+        return 2 * width / 3 * height;
     }
 
     @Override
     public String toString() {
         return "SquarePyramid{" +
-                "height=" + height + getArea() + getVolume()+
+                "Area=" + getArea() + ", Volume=" + getVolume() +
+                ", vertices=" + Arrays.toString(vertices) +
                 ", width=" + width +
+                ", height=" + height +
                 '}';
     }
 }
